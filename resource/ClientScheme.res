@@ -276,20 +276,6 @@ Scheme
 			}
 		}
 
-		// Outlined Crosshair
-		"Maxtasy_Crosshairs"
-		{
-			"1"
-			{
-				"name"		"Maxtasy_Crosshairs"
-				"tall"		"100"
-				"weight"	"0"
-				"additive"	"0"
-				"yres"		"1 10000"
-				"outline"	"1"
-			}
-		}
-
 		// Fixed Spectator Bar (by asfecto)
 		"SpecBarPlayerLabel"
 		{
@@ -549,7 +535,8 @@ Scheme
 				"tall"		"41" [$OSX]
 				"weight"	"0"
 				"antialias" "0"
-				"additive"	"1"
+				"additive"	"0"
+				"outline"	"1"
 				"custom"	"1"
 				"yres"		"1 1599" [!$DECK]
 				"yres"		"1 1439" [$DECK]
@@ -560,7 +547,8 @@ Scheme
 				"tall"		"80"
 				"weight"	"0"
 				"antialias" "1"
-				"additive"	"1"
+				"additive"	"0"
+				"outline"	"1"
 				"custom"	"1"
 				"yres"		"1600 3199" [!$DECK]
 				"yres"		"1440 3199" [$DECK]
@@ -571,7 +559,8 @@ Scheme
 				"tall"		"120"
 				"weight"	"0"
 				"antialias" "1"
-				"additive"	"1"
+				"additive"	"0"
+				"outline"	"1"
 				"custom"	"1"
 				"yres"		"3200 4799"
 			}
@@ -581,7 +570,8 @@ Scheme
 				"tall"		"17"
 				"weight"	"0"
 				"antialias" "1"
-				"additive"	"1"
+				"additive"	"0"
+				"outline"	"1"
 				"custom"	"1"
 			}
 		}
@@ -1309,7 +1299,6 @@ Scheme
 		"14"	"resource/GorDIN-Black.ttf"
 		"15"	"resource/GorDIN-Light.ttf"
 		"16"	"resource/fonts/Dodger.ttf"
-		"17"	"resource/fonts/Maxtasy_Crosshairs.ttf"
-		"18"	"resource/fonts/BatmanForeverAlternate.ttf"
+		"17"	"resource/fonts/BatmanForeverAlternate.ttf"
 	}
 }

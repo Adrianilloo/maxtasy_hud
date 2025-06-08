@@ -246,9 +246,9 @@ event HudPlayerDeath
 	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 255"	Deaccel 0.3 4.0
 
 	// Crosshair disappears on Death
-	Animate MaxtasyCrosshair	labelText	"0"		Linear 	0.0	0.1
-	Animate MaxtasyCrosshair	wide		"38"	Linear 	0.0	0.0
-	Animate MaxtasyCrosshair	tall		"0"		Linear 	0.0	0.0
+	Animate DotCrosshair	labelText	"0"		Linear 	0.0	0.1
+	Animate DotCrosshair	wide		"38"	Linear 	0.0	0.0
+	Animate DotCrosshair	tall		"0"		Linear 	0.0	0.0
 
 	// Overlay disappears on Death
 	Animate MaxtasyOverlay		Alpha		"0"		Linear	0.0	0.0
@@ -266,9 +266,9 @@ event HealthIncreasedAbove20
 	Animate	HudHealth		FgColor   	"0 0 150 255" 		Linear 0.0 	0.03
 
 	// Crosshair appears on Spawn
-	Animate MaxtasyCrosshair	labelText	"A"			Linear 	0.0	0.1
-	Animate MaxtasyCrosshair	wide		"640"		Linear 	0.0	0.0
-	Animate MaxtasyCrosshair	tall		"480"		Linear 	0.0	0.0
+	Animate DotCrosshair	labelText	"Q"			Linear 	0.0	0.1
+	Animate DotCrosshair	wide		"640"		Linear 	0.0	0.0
+	Animate DotCrosshair	tall		"480"		Linear 	0.0	0.0
 
 	// Overlay appears on Spawn
 	Animate MaxtasyOverlay		Alpha		"255"		Linear	0.0	0.0

@@ -1,35 +1,21 @@
 "Resource/HudLayout.res"
 {
-	// Outlined Crosshair
-	MaxtasyCrosshair
+	// Dot Crosshair (colored; main crosshair reuses "Normal" color from HUD)
+	DotCrosshair
 	{
-		"controlName"	"Label"
-		"fieldName"		"MaxtasyCrosshair"
-		"visible"		"1"
-		"enabled"		"1"
-		"font"			"Maxtasy_Crosshairs"
-		"textAlignment"	"center"
+		"controlName"		"Label"
+		"fieldName"			"DotCrosshair"
+		"visible"			"1"
+		"enabled"			"1"
+		"font"				"Crosshairs"
+		"textAlignment"		"center"
+		"fgcolor_override"	"0 255 0 255"
 		"bgcolor_override"	"0 0 150 0"
-
-		// Crosshair Style "A" = plus small, "B" = plus medium, "C" = plus large
-		//(Also put your A, B or C in scripts/HudAnimations.txt - search for "Crosshair appears on Spawn")
-
-		"labelText"		"A"
-
-		// Crosshair Position (should automatically be centered on all resolutions)
-
-		"xpos"			"c-320"
-		"ypos"			"0"
-		"wide"          "640"
-		"tall"			"480"
-
-		// Crosshair Color in RGB+Alpha Code
-
-		"fgcolor_override" 		"0 255 0 255" 		// Lime Green
-		//"fgcolor_override" 	"255 255 255 255"	// Bright White
-		//"fgcolor_override" 	"255 0 255 255"		// Bright Pink
-		//"fgcolor_override" 	"0 255 255 255"		// Turquoise
-		//"fgcolor_override" 	"255 0 0 255"		// Red
+		"labelText"			"Q"
+		"xpos"				"c-320"
+		"ypos"				"0"
+		"wide"				"640"
+		"tall"				"480"
 	}
 
 	HudHealth [!$DECK]
