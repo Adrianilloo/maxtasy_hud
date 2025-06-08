@@ -1,4 +1,5 @@
 ///////////////////////////////////////////////////////////
+// Tracker scheme resource file
 //
 // sections:
 //		Colors			- all the colors used by the scheme
@@ -10,101 +11,99 @@
 Scheme
 {
 	//////////////////////// COLORS ///////////////////////////
-	//////////////////////// COLORS ///////////////////////////
+	// color details
+	// this is a list of all the colors used by the scheme
 	Colors
 	{
 		// base colors
 		"Orange"			"255 176 0 255"
 		"OrangeDim"			"255 176 0 120"
 		"LightOrange"		"188 112 0 128"
-		
+
 		"Red"				"192 28 0 140"
-		//"Black"				"0 0 0 196"
+		"Black"				"0 0 0 255"
 		"TransparentBlack"	"0 0 0 196"
-		"TransparentLightBlack"	"0 0 0 90"
 
 		"Blank"				"0 0 0 0"
-		"ForTesting"		"255 0 0 32"
-		"ForTesting_Magenta"	"255 0 255 255"
-		"ForTesting_MagentaDim"	"255 0 255 120"
-		
-		// My Colors
-		
-		"Testing"			"255 0 255 255"
-		"Blue"				"0 0 150 255"
+
+		// Maxtasy's
 		"White"				"255 255 255 255"
 		"RedFull"			"175 0 0 255"
 		"RedTransparent"	"175 0 0 25"
 	}
-	
+
 	///////////////////// BASE SETTINGS ////////////////////////
 	//
 	// default settings for all panels
 	// controls use these to determine their settings
 	BaseSettings
 	{
-		"FgColor"				"RedFull"				//Border around whole scoreboard
-		"BgColor"				"Blank"					//Default Background of HUD Elements
+		"FgColor"			"RedFull"
+		"FgColor_vrmode"	"RedFull"
+		"BgColor"			"Blank"
 
-		"Panel.FgColor"			"White"					//Default Suit Color
-		"Panel.BgColor"			"0 0 0 0"				//0 0 0 76
-		
-		"BrightFg"				"255 255 255 255"		//255 220 0 255
+		"Panel.FgColor"		"White"
+		"Panel.BgColor"		"Blank"
 
-		"DamagedBg"				"180 0 0 200"
-		"DamagedFg"				"180 0 0 230"
-		"BrightDamagedFg"		"255 0 0 255"
+		"BrightFg"			"White"
+
+		"DamagedBg"			"180 0 0 200"
+		"DamagedFg"			"180 0 0 230"
+		"BrightDamagedFg"	"255 0 0 255"
 
 		// weapon selection colors
-		"SelectionNumberFg"		"255 255 255 255"		//255 220 0 255
-		"SelectionTextFg"		"255 255 255 255"		//255 220 0 255
-		"SelectionEmptyBoxBg" 	"0 0 0 0"				//0 0 0 80
-		"SelectionBoxBg" 		"0 0 0 0"				//0 0 0 80
-		"SelectionSelectedBoxBg" "0 0 0 0"				//0 0 0 80
-		
-		"ZoomReticleColor"		"255 255 255 100"		// Zoom Crosshair
+		"SelectionNumberFg"			"White"
+		"SelectionTextFg"			"White"
+		"SelectionEmptyBoxBg" 		"Blank"
+		"SelectionBoxBg" 			"Blank"
+		"SelectionSelectedBoxBg"	"Blank"
+
+		"ZoomReticleColor"	"255 255 255 100"
 
 		// HL1-style HUD colors
-		"Yellowish"				"255 160 0 255"
-		"Normal"				"255 255 255 255" // Crosshair + Pickup History
-		"Caution"				"255 48 0 255"
+		"Yellowish"			"255 160 0 255"
+		"Normal"			"White"
+		"Caution"			"255 48 0 255"
 
 		// Top-left corner of the "Half-Life 2" on the main screen
-		"Main.Title1.X"			"76"
-		"Main.Title1.Y"			"184"
-		"Main.Title1.Color"		"0 0 0 0"
-		
+		"Main.Title1.X"		"76"
+		"Main.Title1.Y"		"184"
+		"Main.Title1.Color"	"Blank"
+
 		// Top-left corner of the "DEATHMATCH" on the main screen
 		"Main.Title2.X"		"315"
 		"Main.Title2.Y"		"222"
-		"Main.Title2.Color"	"0 0 0 0"
+		"Main.Title2.Color"	"Blank"
 
 		// Top-left corner of the menu on the main screen
-		"Main.Menu.X"		"5"
-		"Main.Menu.Y"		"15"
+		"Main.Menu.X"		"32"
+		"Main.Menu.Y"		"240"
 
 		// Blank space to leave beneath the menu on the main screen
 		"Main.BottomBorder"	"0"
 
+		// Deck colors
+		"SteamDeckLoadingBar"			"250 128 20 255"
+		"SteamDeckSpinner"				"201 100 0 255"
+		"SteamDeckLoadingText"			"181 179 175 255"
 
-///HERE
-		// vgui_controls color specifications (MOTD Window)
-		Border.Bright					"Honeydew2"		// the lit side of a control
-		Border.Dark						"Honeydew4"		// the dark/unlit side of a control
-		Border.Selection				"Blank"			// the additional border color for displaying the default/selected button
+		// vgui_controls color specifications
+		Border.Bright					"LightOrange"		// the lit side of a control
+		Border.Dark						"LightOrange"		// the dark/unlit side of a control
+		Border.Selection				"Blank"				// the additional border color for displaying the default/selected button
 
-		Button.TextColor				"Black"
-		Button.BgColor					"Honeydew3"
-		Button.ArmedTextColor			"Black"
-		Button.ArmedBgColor				"Honeydew3"
-		Button.DepressedTextColor		"Black"
-		Button.DepressedBgColor			"Honeydew3"
+		Button.TextColor				"White"
+		Button.BgColor					"Black"
+		Button.ArmedTextColor			"White"
+		Button.ArmedBgColor				"Black"
+		Button.DepressedTextColor		"White"
+		Button.DepressedBgColor			"Black"
 
 		CheckButton.TextColor			"Orange"
 		CheckButton.SelectedTextColor	"Orange"
 		CheckButton.BgColor				"TransparentBlack"
-		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
-		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
+		CheckButton.Border1				"Border.Dark" 		// the left checkbutton border
+		CheckButton.Border2				"Border.Bright"		// the right checkbutton border
 		CheckButton.Check				"Orange"				// color of the check itself
 
 		ComboBoxButton.ArrowColor		"Orange"
@@ -137,7 +136,7 @@ Scheme
 
 		Label.TextDullColor				"Orange"
 		Label.TextColor					"Orange"
-		Label.TextBrightColor			"RedFull"	//Scoreboard Server Name Color
+		Label.TextBrightColor			"RedFull"
 		Label.SelectedTextColor			"Orange"
 		Label.BgColor					"Blank"
 		Label.DisabledFgColor1			"Blank"
@@ -145,7 +144,7 @@ Scheme
 
 		ListPanel.TextColor					"Orange"
 		ListPanel.BgColor					"TransparentBlack"
-		ListPanel.SelectedTextColor			"Black"
+		ListPanel.SelectedTextColor			"Variable" // NOTE: Takes a different default value depending on the control
 		ListPanel.SelectedBgColor			"Red"
 		ListPanel.SelectedOutOfFocusBgColor	"Red"
 		ListPanel.EmptyListInfoTextColor	"Orange"
@@ -157,9 +156,6 @@ Scheme
 		Menu.TextInset					"6"
 
 		Chat.TypingText					"Orange"
-
-		Panel.FgColor					"OrangeDim"
-		Panel.BgColor					"blank"
 
 		ProgressBar.FgColor				"Orange"
 		ProgressBar.BgColor				"TransparentBlack"
@@ -176,7 +172,7 @@ Scheme
 		RichText.SelectedTextColor		"Orange"
 		RichText.SelectedBgColor		"Blank"
 
-				ScrollBarButton.FgColor				"Orange"
+		ScrollBarButton.FgColor				"Orange"
 		ScrollBarButton.BgColor				"Blank"
 		ScrollBarButton.ArmedFgColor		"Orange"
 		ScrollBarButton.ArmedBgColor		"Blank"
@@ -186,18 +182,16 @@ Scheme
 		ScrollBarSlider.FgColor				"Blank"		// nob color
 		ScrollBarSlider.BgColor				"Blank"		// slider background color
 
-		// Scoreboard
-		
-		SectionedListPanel.HeaderTextColor	"RedFull"						//Score, Deaths, Latency Text
-		SectionedListPanel.HeaderBgColor	"Blank"							//Does nothing
-		SectionedListPanel.DividerColor		"RedFull"	 					//Line under Score, Deaths, Latency
-		SectionedListPanel.TextColor		"Orange" 						//Does nothing
-		SectionedListPanel.BrightTextColor	"Orange" 						//Does nothing
-		SectionedListPanel.BgColor			"0 0 0 240"						//Background color of the complete scoreboard
-		SectionedListPanel.SelectedTextColor			"Black"				//Does nothing
-		SectionedListPanel.SelectedBgColor				"Red"				//Does nothing
-		SectionedListPanel.OutOfFocusSelectedTextColor	"Black" 			//Does nothing
-		SectionedListPanel.OutOfFocusSelectedBgColor	"RedTransparent"	//Background color of your score
+		SectionedListPanel.HeaderTextColor				"RedFull"
+		SectionedListPanel.HeaderBgColor				"Blank"
+		SectionedListPanel.DividerColor					"RedFull"
+		SectionedListPanel.TextColor					"Orange"
+		SectionedListPanel.BrightTextColor				"Orange"
+		SectionedListPanel.BgColor						"0 0 0 240"
+		SectionedListPanel.SelectedTextColor			"White"
+		SectionedListPanel.SelectedBgColor				"Red"
+		SectionedListPanel.OutOfFocusSelectedTextColor	"White"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"RedTransparent"
 
 		Slider.NobColor				"108 108 108 255"
 		Slider.TextColor			"127 140 127 255"
@@ -210,7 +204,7 @@ Scheme
 		TextEntry.CursorColor		"Orange"
 		TextEntry.DisabledTextColor	"Orange"
 		TextEntry.DisabledBgColor	"Blank"
-		TextEntry.SelectedTextColor	"Black"
+		TextEntry.SelectedTextColor	"Orange"
 		TextEntry.SelectedBgColor	"Red"
 		TextEntry.OutOfFocusSelectedBgColor	"Red"
 		TextEntry.FocusEdgeColor	"TransparentBlack"
@@ -225,69 +219,49 @@ Scheme
 		WizardSubPanel.BgColor		"Blank"
 
 		// scheme-specific colors
-		"FgColor"		"Orange"
-		"BgColor"		"TransparentBlack"
-
-		"ViewportBG"		"Blank"
+		"ViewportBG"	"Blank"
 		"team0"			"204 204 204 255" // Spectators
 		"team1"			"255 64 64 255" // CT's
 		"team2"			"153 204 255 255" // T's
 
 		"MapDescriptionText"	"Orange" // the text used in the map description window
-		"CT_Blue"			"153 204 255 255"
-		"T_Red"				"255 64 64 255"
-		"Hostage_Yellow"	"Panel.FgColor"
-		"HudIcon_Green"		"0 160 0 255"
-		"HudIcon_Red"		"160 0 0 255"
+		"CT_Blue"				"153 204 255 255"
+		"T_Red"					"255 64 64 255"
+		"Hostage_Yellow"		"Panel.FgColor"
+		"HudIcon_Green"			"0 160 0 255"
+		"HudIcon_Red"			"160 0 0 255"
 
 		// CHudMenu
 		"ItemColor"		"255 167 42 200"	// default 255 167 42 255
 		"MenuColor"		"233 208 173 255"
 		"MenuBoxBg"		"0 0 0 100"
 
-		// weapon selection colors
-		"SelectionNumberFg"		"255 220 0 200"
-		"SelectionTextFg"		"255 220 0 200"
-		"SelectionEmptyBoxBg" 	"0 0 0 80"
-		"SelectionBoxBg" 		"0 0 0 80"
-		"SelectionSelectedBoxBg" "0 0 0 190"
-
 		// Hint message colors
-		"HintMessageFg"			"255 255 255 255"
+		"HintMessageFg"			"White"
 		"HintMessageBg" 		"0 0 0 60"
 
 		"ProgressBarFg"			"255 30 13 255"
-
-		// Top-left corner of the "Counter-Strike" on the main screen
-		"Main.Title1.X"		"32"
-		"Main.Title1.Y"		"180"
-		"Main.Title1.Color"	"255 255 255 255"
-
-		// Top-left corner of the "SOURCE" on the main screen
-		"Main.Title2.X"		"380"	
-		"Main.Title2.Y"		"205"
-		"Main.Title2.Color"	"255 255 255 80"
-
-		// Top-left corner of the "BETA" on the main screen
-		"Main.Title3.X"		"460"
-		"Main.Title3.Y"		"-10"
-		"Main.Title3.Color"	"255 255 0 255"
-
-		// Top-left corner of the menu on the main screen
-		"Main.Menu.X"		"32"
-		"Main.Menu.Y"		"248"
-
-		// Blank space to leave beneath the menu on the main screen
-		"Main.BottomBorder"	"32"
 	}
-	
+
+	//////////////////////// BITMAP FONT FILES /////////////////////////////
+	//
+	// Bitmap Fonts are ****VERY*** expensive static memory resources so they are purposely sparse
+	BitmapFontFiles
+	{
+		// UI buttons, custom font, (256x64)
+		"Buttons"		"materials/vgui/fonts/buttons_32.vbf"
+	}
+
+
 	//////////////////////// FONTS /////////////////////////////
 	//
 	// describes all the fonts
+	// fonts are used in order that they are listed
+	// if a font fails to load then the subsequent fonts will replace
+	// fonts listed later in the order will only be used if they fulfill a range not already filled
 	Fonts
-		// fonts are used in order that they are listed
 	{
-			// Maxtasy Overlay
+		// Maxtasy Overlay
 		"Dodger"
 		{
 			"1"
@@ -295,32 +269,34 @@ Scheme
 				"name"		"Dodger"
 				"tall"		"20"
 				"weight"	"0"
-				"antialias" "1"
+				"antialias"	"1"
 				"additive"	"0"
 				"yres"		"1 10000"
-				"outline"   "0"
-			}			
+				"outline"	"0"
+			}
 		}
+
 		// Outlined Crosshair
 		"Maxtasy_Crosshairs"
 		{
 			"1"
 			{
 				"name"		"Maxtasy_Crosshairs"
-				"tall"		"100" //40
+				"tall"		"100"
 				"weight"	"0"
 				"additive"	"0"
 				"yres"		"1 10000"
-				"outline"   "1"
-			}			
+				"outline"	"1"
+			}
 		}
+
 		// Fixed Spectator Bar (by asfecto)
 		"SpecBarPlayerLabel"
 		{
 			"1"
 			{
-				"name"		"Segoe UI"
-				"tall"		"25"
+				"name"			"Segoe UI"
+				"tall"			"25"
 				"weight"		"500"
 				"antialias" 	"1"
 				"additive"		"0"
@@ -328,6 +304,7 @@ Scheme
 				"dropshadow"	"0"
 			}
 		}
+
 		"DebugFixed"
 		{
 			"1"
@@ -338,7 +315,7 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		// fonts are used in order that they are listed
+
 		"DebugFixedSmall"
 		{
 			"1"
@@ -349,49 +326,52 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		// fonts listed later in the order will only be used if they fulfill a range not already filled
-		// if a font fails to load then the subsequent fonts will replace
+
 		Default
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"9"
-				"weight"	"700"
+				"name"		"GorDIN"
+				"tall"		"16" [$DECK]
+				"tall"		"12"
+				"weight"	"600"
 				"antialias" "1"
 				"yres"	"1 599"
 			}
 			"2"
 			{
-				"name"		"Verdana"
-				"tall"		"12"
-				"weight"	"700"
+				"name"		"GorDIN"
+				"tall"		"22" [$DECK]
+				"tall"		"14"
+				"weight"	"600"
 				"antialias" "1"
 				"yres"	"600 767"
 			}
 			"3"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
-				"weight"	"900"
+				"name"		"GorDIN"
+				"tall"		"26" [$DECK]
+				"tall"		"19"
+				"weight"	"700"
 				"antialias" "1"
 				"yres"	"768 1023"
 			}
 			"4"
 			{
-				"name"		"Verdana"
-				"tall"		"20"
-				"weight"	"900"
+				"name"		"GorDIN"
+				"tall"		"30" [$DECK]
+				"tall"		"21"
+				"weight"	"700"
 				"antialias" "1"
 				"yres"	"1024 1199"
 			}
-			"5"
+			"5" // Proportional - misyl
 			{
-				"name"		"Verdana"
-				"tall"		"24"
-				"weight"	"900"
+				"name"		"GorDIN"
+				"tall"		"14" [$DECK]
+				"tall"		"10"
+				"weight"	"700"
 				"antialias" "1"
-				"yres"	"1200 10000"
 				"additive"	"1"
 			}
 		}
@@ -399,122 +379,84 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"12"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"weight"	"400"
 				"yres"	"480 599"
+				"antialias" "1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
-				"tall"		"13"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"name"		"GorDIN"
+				"tall"		"14"
+				"weight"	"400"
 				"yres"	"600 767"
+				"antialias" "1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"name"		"GorDIN"
+				"tall"		"18"
+				"weight"	"400"
 				"yres"	"768 1023"
 				"antialias"	"1"
 			}
 			"4"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"20"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"weight"	"400"
 				"yres"	"1024 1199"
 				"antialias"	"1"
 			}
-			"5"
+			"5" // Proportional - misyl
 			{
-				"name"		"Verdana"
-				"tall"		"24"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"1200 6000"
-				"antialias"	"1"
-			}
-			"6"
-			{
-				"name"		"Arial"
+				"name"		"GorDIN"
 				"tall"		"12"
-				"range" 		"0x0000 0x00FF"
-				"weight"		"0"
+				"weight"	"0"
+				"antialias"	"1"
 			}
 		}
 		"DefaultVerySmall"
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"12"
+				"name"		"GorDIN"
+				"tall"		"14"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"480 599"
+				"antialias" "1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
-				"tall"		"13"
+				"name"		"GorDIN"
+				"tall"		"15"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"600 767"
+				"antialias" "1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
+				"name"		"GorDIN"
+				"tall"		"16"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"768 1023"
 				"antialias"	"1"
 			}
 			"4"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"20"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"1024 1199"
 				"antialias"	"1"
 			}
-			"5"
+			"5"  // Proportional - misyl
 			{
-				"name"		"Verdana"
-				"tall"		"24"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1200 6000"
-				"antialias"	"1"
-			}
-			"6"
-			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"12"
-				"range" 		"0x0000 0x00FF"
-				"weight"		"0"
-			}
-			"7"
-			{
-				"name"		"Arial"
-				"tall"		"11"
-				"range" 		"0x0000 0x00FF"
-				"weight"		"0"
-			}
-		}
-		"MenuTitle"
-		{
-			"1"
-			{
-				"name"		"Verdana Bold"
-				"tall"		"18"
-				"weight"	"500"
+				"weight"	"0"
+				"antialias"	"1"
 			}
 		}
 		WeaponIcons
@@ -522,7 +464,9 @@ Scheme
 			"1"
 			{
 				"name"		"HalfLife2"
+				"tall"		"70" [$DECK]
 				"tall"		"64"
+				"tall_hidef"	"58"
 				"weight"	"0"
 				"antialias" "1"
 				"additive"	"1"
@@ -534,11 +478,64 @@ Scheme
 			"1"
 			{
 				"name"		"HalfLife2"
+				"tall"		"70" [$DECK]
 				"tall"		"64"
+				"tall_hidef"	"58"
 				"weight"	"0"
 				"antialias" "1"
 				"blur"		"5"
 				"scanlines"	"2"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		WeaponIconsSmall
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"36" [$DECK]
+				"tall"		"32"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		WeaponIconsSmall_ABitSmaller
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"34" [$DECK]
+				"tall"		"27"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		WeaponIconsSmallSecondary
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"34" [$DECK]
+				"tall"		"25"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		FlashlightDeck
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"46"
+				"weight"	"0"
+				"antialias" "1"
 				"additive"	"1"
 				"custom"	"1"
 			}
@@ -552,10 +549,40 @@ Scheme
 				"tall"		"41" [$OSX]
 				"weight"	"0"
 				"antialias" "0"
-				"additive"	"0"
-				"outline"	"1"
+				"additive"	"1"
 				"custom"	"1"
-				"yres"		"1 10000"
+				"yres"		"1 1599" [!$DECK]
+				"yres"		"1 1439" [$DECK]
+			}
+			"2"
+			{
+				"name"		"HalfLife2"
+				"tall"		"80"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+				"yres"		"1600 3199" [!$DECK]
+				"yres"		"1440 3199" [$DECK]
+			}
+			"3"
+			{
+				"name"		"HalfLife2"
+				"tall"		"120"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+				"yres"		"3200 4799"
+			}
+			"4"
+			{
+				"name"		"HalfLife2"
+				"tall"		"17"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
 			}
 		}
 		QuickInfo
@@ -563,6 +590,7 @@ Scheme
 			"1"
 			{
 				"name"		"HL2cross"
+				"tall"		"36" [$DECK]
 				"tall"		"28" [!$OSX]
 				"tall"		"50" [$OSX]
 				"weight"	"0"
@@ -576,7 +604,8 @@ Scheme
 			"1"
 			{
 				"name"		"BatmanForeverAlternate"
-				"tall"		"32"
+				"tall"		"32"	[!$DECK]
+				"tall"		"40"	[$DECK]
 				"weight"	"0"
 				"antialias" "1"
 				"additive"	"0"
@@ -588,7 +617,8 @@ Scheme
 			"1"
 			{
 				"name"		"BatmanForeverAlternate"
-				"tall"		"32"
+				"tall"		"32"	[!$DECK]
+				"tall"		"40"	[$DECK]
 				"weight"	"0"
 				"blur"		"4"
 				"scanlines" "2"
@@ -603,7 +633,8 @@ Scheme
 			{
 				"name"		"BatmanForeverAlternate" [!$OSX]
 				"name"		"Helvetica Bold" [$OSX]
-				"tall"		"15" //16
+				"tall"		"15"	[!$DECK]
+				"tall"		"24"	[$DECK]
 				"weight"	"1000"
 				"additive"	"0"
 				"antialias" "1"
@@ -614,32 +645,33 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
+				"tall"		"16" [$DECK]
 				"tall"		"11"
 				"weight"	"700"
 				"antialias" "1"
-				"additive"	"0"
+				"additive"	"1"
 			}
 		}
 		HudHintTextLarge
 		{
-			"1"
+			"1"	[$WIN32]
 			{
-				"name"		"Verdana" [!$OSX]
-				"name"		"Helvetica Bold" [$OSX]
-				"tall"		"14"
-				"weight"	"1000"
+				"name"		"GorDIN"
+				"tall"		"22" [$DECK]
+				"tall"		"15"
+				"weight"	"700"
 				"antialias" "1"
 				"additive"	"1"
 			}
 		}
 		HudHintTextSmall
 		{
-			"1"
+			"1"	[$WIN32]
 			{
-				"name"		"Verdana" [!$OSX]
-				"name"		"Helvetica" [$OSX]
-				"tall"		"11"
+				"name"		"GorDIN"
+				"tall"		"18" [$DECK]
+				"tall"		"13"
 				"weight"	"0"
 				"antialias" "1"
 				"additive"	"1"
@@ -649,43 +681,64 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"8"
-				"weight"	"700"
+				"name"		"GorDIN"
+				"tall"		"12" [$DECK]
+				"tall"		"12"
+				"weight"	"600"
 				"antialias" "1"
 				"yres"	"1 599"
+				"additive"	"1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
-				"tall"		"10"
-				"weight"	"700"
+				"name"		"GorDIN"
+				"tall"		"14" [$DECK]
+				"tall"		"12"
+				"weight"	"600"
 				"antialias" "1"
 				"yres"	"600 767"
+				"additive"	"1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
-				"tall"		"12"
-				"weight"	"900"
+				"name"		"GorDIN"
+				"tall"		"18" [$DECK]
+				"tall"		"14"
+				"weight"	"600"
 				"antialias" "1"
 				"yres"	"768 1023"
+				"additive"	"1"
 			}
 			"4"
 			{
-				"name"		"Verdana"
-				"tall"		"16"
-				"weight"	"900"
+				"name"		"GorDIN"
+				"tall"		"22" [$DECK]
+				"tall"		"17"
+				"weight"	"600"
 				"antialias" "1"
 				"yres"	"1024 1199"
+				"additive"	"1"
 			}
 			"5"
 			{
-				"name"		"Verdana"
-				"tall"		"17"
-				"weight"	"1000"
+				"name"		"GorDIN"
+				"tall"		"9" [$DECK]
+				"tall"		"7"
+				"weight"	"700"
 				"antialias" "1"
-				"yres"	"1200 10000"
+				"additive"	"1"
+			}
+		}
+		GameUIButtons
+		{
+			"1"	[$X360]
+			{
+				"bitmap"	"1"
+				"name"		"Buttons"
+				"scalex"	"0.63"
+				"scaley"	"0.63"
+				"scalex_hidef"	"1.0"
+				"scaley_hidef"	"1.0"
 			}
 		}
 		BudgetLabel
@@ -700,11 +753,18 @@ Scheme
 		}
 		DebugOverlay
 		{
-			"1"
+			"1"	[$WIN32]
 			{
 				"name"		"Courier New"
 				"tall"		"14"
 				"weight"	"400"
+				"outline"	"1"
+			}
+			"1"	[$X360]
+			{
+				"name"		"Tahoma"
+				"tall"		"18"
+				"weight"	"200"
 				"outline"	"1"
 			}
 		}
@@ -712,63 +772,57 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma" [!$OSX]
-				"name"		"Verdana" [$OSX]
-				"tall"		"26" [!$OSX]
-				"tall"		"24" [$OSX]
-				"tall"		"26"
-				"weight"	"500"
+				"name"		"GorDIN"
+				"tall"		"15" [$DECK]
+				"tall"		"12"
+				"weight"	"600" // todo(misyl): do we want this at 500 or 600?
+				"antialias"	"1"
 			}
 		}
 		"CloseCaption_Italic"
 		{
 			"1"
 			{
-				"name"		"Tahoma" [!$OSX]
-				"name"		"Verdana Italic" [$OSX]
-				"tall"		"26" [!$OSX]
-				"tall"		"24" [$OSX]
-				"tall"		"26"
-				"weight"	"500"
+				"name"		"GorDIN"
+				"tall"		"15" [$DECK]
+				"tall"		"12"
+				"weight"	"600"
 				"italic"	"1"
+				"antialias"	"1"
 			}
 		}
 		"CloseCaption_Bold"
 		{
 			"1"
 			{
-				"name"		"Tahoma" [!$OSX]
-				"name"		"Verdana Bold" [$OSX]
-				"tall"		"26" [!$OSX]
-				"tall"		"24" [$OSX]
-				"tall"		"26"
-				"weight"	"900"
+				"name"		"GorDIN"
+				"tall"		"15" [$DECK]
+				"tall"		"12"
+				"weight"	"700"
+				"antialias"	"1"
 			}
 		}
 		"CloseCaption_BoldItalic"
 		{
 			"1"
 			{
-				"name"		"Tahoma" [!$OSX]
-				"name"		"Verdana Bold Italic" [$OSX]
-				"tall"		"26" [!$OSX]
-				"tall"		"24" [$OSX]
-				"tall"		"26"
-				"weight"	"900"
+				"name"		"GorDIN"
+				"tall"		"15" [$DECK]
+				"tall"		"12"
+				"weight"	"700"
 				"italic"	"1"
+				"antialias"	"1"
 			}
 		}
 		"CloseCaption_Small"
 		{
 			"1"
 			{
-				"name"		"Tahoma" [!$OSX]
-				"name"		"Verdana" [$OSX]
-				"tall"		"16" [!$OSX]
-				"tall"		"14" [$OSX]
- 				"tall_hidef"	"24"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"name"		"GorDIN"
+				"tall"		"15" [$DECK]
+				"tall"		"12"
+				"weight"	"600"
+				"antialias"	"1"
 			}
 		}
 		// this is the symbol font
@@ -786,10 +840,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Trebuchet MS"
+				"name"		"GorDIN"
 				"tall"		"24"
-				"weight"	"900"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"weight"	"700"
 				"antialias" "1"
 				"additive"	"1"
 			}
@@ -798,9 +851,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Trebuchet MS"
+				"name"		"GorDIN"
 				"tall"		"18"
-				"weight"	"900"
+				"weight"	"700"
+				"antialias" "1"
 			}
 		}
 		ClientTitleFont
@@ -808,70 +862,14 @@ Scheme
 			"1"
 			{
 				"name"  "HL2MP"
-				"tall"  "46"
+				"tall"			"46"
 				"weight" "0"
 				"additive" "0"
 				"antialias" "1"
+				"custom"	"1" [$OSX]
 			}
 		}
-		CreditsLogo
-		{
-			"1"
-			{
-				"name"		"HalfLife2"
-				"tall"		"128"
-				"weight"	"0"
-				"antialias" "1"
-				"additive"	"1"
-				"custom"	"1"
-			}
-		}
-		CreditsText
-		{
-			"1"
-			{
-				"name"		"Trebuchet MS"
-				"tall"		"20"
-				"weight"	"900"
-				"antialias" "1"
-				"additive"	"1"
-			}
-		}
-		CreditsOutroLogos
-		{
-			"1"
-			{
-				"name"		"HalfLife2"
-				"tall"		"48"
-				"weight"	"0"
-				"antialias" "1"
-				"additive"	"1"
-				"custom"	"1"
-			}
-		}
-		CreditsOutroText
-		{
-			"1"
-			{
-				"name"		"Verdana"
-				"tall"		"9"
-				"weight"	"900"
-				"antialias" "1"
-			}
-		}
-		CenterPrintText
-		{
-			// note that this scales with the screen resolution
-			"1"
-			{
-				"name"		"Trebuchet MS" [!$OSX]
-				"name"		"Helvetica" [$OSX]
-				"tall"		"18"
-				"weight"	"900"
-				"antialias" "1"
-				"additive"	"1"
-			}
-		}
+
 		"ChatFont"
 		{
 			"1"
@@ -906,27 +904,39 @@ Scheme
 				"yres"	"1024 1199"
 				"dropshadow"	"1"
 			}
-			"5"
+			"5" // Misyl: Proportional
 			{
 				"name"		"Verdana"
-				"tall"		"24"
+				"tall"		"9"
 				"weight"	"700"
-				"yres"	"1200 10000"
-				"dropshadow"	"1"
+				"antialias"	"1"
 			}
 		}
+
 		"TargetID"
 		{
 			"1"
 			{
-				"name"		"Trebuchet MS"
+				"name"		"GorDIN"
 				"tall"		"24"
-				"weight"	"900"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"weight"	"0"
 				"antialias" "1"
-				"additive"	"0"
+				"additive"	"1"
 			}
 		}
+
+		"HudNumbersTimer"
+		{
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"15"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+			}
+		}
+
 		"HL2MPTypeDeath"
 		{
 		   "1"
@@ -938,13 +948,14 @@ Scheme
 				"antialias" "1"
 				"custom" "1" [$OSX]
 		   }
-		}	
+		}
+
 		// Used by scoreboard and spectator UI for names which don't map in the normal fashion
 		"DefaultVerySmallFallBack"
 		{
 			"1"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"10"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -953,7 +964,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"12"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -962,675 +973,343 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"15"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"		"1200 6000"
 				"antialias"	"1"
 			}
-		}
-
-	}
-
-		//////////////////// BORDERS //////////////////////////////
-	//
-	// describes all the border types
-	Borders
-	{
-		BaseBorder
-		{
-			"inset" "0 0 1 1"
-			Left
+			"4"  // Proportional - misyl
 			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-		}
-		
-		TitleButtonBorder
-		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"10"
+				"weight"	"0"
+				"antialias"	"1"
 			}
 		}
 
-		TitleButtonDisabledBorder
+		CreditsLogo
 		{
-			"inset" "0 0 1 1"
-			Left
+			"1"
 			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "0 1"
-				}
+				"name"		"HalfLife2"
+				"tall"		"34"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		CreditsIcons
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"34"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		CreditsText
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"20"
+				"weight"	"900"
+				"antialias" "1"
+				"additive"	"1"
+				"yres"	"480 899"
+			}
+			"2"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"12"
+				"weight"	"900"
+				"antialias" "1"
+				"additive"	"1"
+			}
+		}
+		CreditsOutroLogos
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"34"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		CreditsOutroValve
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"48"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		CreditsOutroText
+		{
+			"1"
+			{
+				"name"		"Verdana" [!$OSX]
+				"name"		"Courier Bold" [$OSX]
+				"tall"		"16"
+				"weight"	"900"
+				"antialias" "1"
+			}
+		}
+		CenterPrintText
+		{
+			// note that this scales with the screen resolution
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"18"
+				"weight"	"700"
+				"antialias" "1"
+				"additive"	"1"
+			}
+		}
+		HDRDemoText
+		{
+			// note that this scales with the screen resolution
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"24"
+				"weight"	"900"
+				"antialias" "1"
+				"additive"	"1"
+			}
+		}
+		"AchievementNotification"
+		{
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"14"
+				"weight"	"900"
+				"antialias" "1"
+			}
+		}
+		"CommentaryDefault"
+		{
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"12"
+				"weight"	"700"
+				"yres"	"480 599"
+				"antialias" "1"
+			}
+			"2"
+			{
+				"name"		"GorDIN"
+				"tall"		"13"	[$WIN32]
+				"tall"		"20"	[$X360]
+				"weight"	"700"
+				"yres"	"600 767"
+				"antialias" "1"
+			}
+			"3"
+			{
+				"name"		"GorDIN"
+				"tall"		"14"
+				"weight"	"700"
+				"yres"	"768 1023"
+				"antialias"	"1"
+			}
+			"4"
+			{
+				"name"		"GorDIN"
+				"tall"		"20"
+				"weight"	"700"
+				"yres"	"1024 1199"
+				"antialias"	"1"
+			}
+			"6" // Proportional
+			{
+				"name"		"GorDIN"
+				"tall"		"10"
+				"weight"	"700"
+				"antialias" "1"
 			}
 
-			Right
+		}
+		"SteamDeckLoadingText"
+		{
+			"7"
 			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "1 0"
-				}
-			}
-			Top
-			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "BgColor"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"24"
+				"weight"	"700"
+				"antialias" "1"
 			}
 		}
 
-		TitleButtonDepressedBorder
+		"PDump"
 		{
-			"inset" "1 1 1 1"
-			Left
+			"1"
 			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 1"
-				}
+				"name"		"GorDIN"
+				"tall"		"24"
+				"weight"	"400"
+				"yres"	"480 599"
+				"antialias" "1"
 			}
-
-			Right
+			"2"
 			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "1 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"24"
+				"weight"	"400"
+				"yres"	"600 767"
+				"antialias" "1"
 			}
-
-			Top
+			"3"
 			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"24"
+				"weight"	"400"
+				"yres"	"768 1023"
+				"antialias"	"1"
 			}
-
-			Bottom
+			"4"
 			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"24"
+				"weight"	"400"
+				"yres"	"1024 1199"
+				"antialias"	"1"
+			}
+			"5"
+			{
+				"name"		"GorDIN"
+				"tall"		"40"
+				"weight"	"400"
+				"yres"	"1200 10000"
+				"antialias"	"1"
 			}
 		}
-
-		ScrollBarButtonBorder
+		"PDumpSmall"
 		{
-			"inset" "1 0 0 0"
-			Left
+			"1"
 			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 1"
-				}
+				"name"		"GorDIN"
+				"tall"		"12"
+				"weight"	"400"
+				"yres"	"480 599"
+				"antialias" "1"
 			}
-
-			Right
+			"2"
 			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "1 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"14"
+				"weight"	"400"
+				"yres"	"600 767"
+				"antialias" "1"
 			}
-
-			Top
+			"3"
 			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"18"
+				"weight"	"400"
+				"yres"	"768 1023"
+				"antialias"	"1"
 			}
-
-			Bottom
+			"4"
 			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"20"
+				"weight"	"400"
+				"yres"	"1024 1199"
+				"antialias"	"1"
+			}
+			"5"
+			{
+				"name"		"GorDIN"
+				"tall"		"35"
+				"weight"	"400"
+				"yres"	"1200 10000"
+				"antialias"	"1"
 			}
 		}
-
-		ScrollBarButtonDepressedBorder
+		"PDumpVerySmall"
 		{
-			"inset" "2 2 0 0"
-			Left
+			"1"
 			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 1"
-				}
+				"name"		"GorDIN"
+				"tall"		"14"
+				"weight"	"400"
+				"yres"	"480 599"
+				"antialias" "1"
 			}
-
-			Right
+			"2"
 			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "1 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"15"
+				"weight"	"400"
+				"yres"	"600 767"
+				"antialias" "1"
 			}
-
-			Top
+			"3"
 			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"16"
+				"weight"	"400"
+				"yres"	"768 1023"
+				"antialias"	"1"
 			}
-
-			Bottom
+			"4"
 			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"20"
+				"weight"	"400"
+				"yres"	"1024 1199"
+				"antialias"	"1"
 			}
-		}
-		
-		ButtonBorder
-		{
-			"inset" "0 0 0 0"
-			Left
+			"5"
 			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "1 1"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		FrameBorder
-		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "0 1"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		TabBorder
-		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		TabActiveBorder
-		{
-			"inset" "0 0 1 0"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "ControlBG"
-					"offset" "6 2"
-				}
-			}
-		}
-
-
-		ToolTipBorder
-		{
-			"inset" "0 0 1 0"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		// this is the border used for default buttons (the button that gets pressed when you hit enter)
-		ButtonKeyFocusBorder
-		{
-			"inset" "0 0 0 0"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "1 1"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		ButtonDepressedBorder
-		{
-			"inset" "0 0 0 0"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "1 1"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		ComboBoxBorder
-		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-		}
-
-		MenuBorder
-		{
-			"inset" "1 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-		}
-		BrowserBorder
-		{
-			"inset" "0 0 0 0"
-			Left
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "Border.Dark"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "Border.Bright"
-					"offset" "0 0"
-				}
+				"name"		"GorDIN"
+				"tall"		"30"
+				"weight"	"400"
+				"yres"	"1200 10000"
+				"antialias"	"1"
 			}
 		}
 	}
 
-	
 	//////////////////////// CUSTOM FONT FILES /////////////////////////////
 	//
 	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts
 	CustomFontFiles
 	{
 		"1"		"resource/HALFLIFE2.ttf"
-		"2"		"resource/HL2MP.ttf"
-		"3"		"resource/HL2crosshairs.ttf"
-		"4"		"resource/fonts/BatmanForeverAlternate.ttf"
-		"5"		"resource/fonts/Maxtasy_Crosshairs.ttf"
-		"6"		"resource/fonts/Dodger.ttf"
+		"2"		"resource/HL2crosshairs.ttf"
+		"3"		"resource/HL2MP.ttf"
+		"4"		"resource/linux_fonts/DejaVuSans.ttf"
+		"5"		"resource/linux_fonts/DejaVuSans-Bold.ttf"
+		"6"		"resource/linux_fonts/DejaVuSans-BoldOblique.ttf"
+		"7"		"resource/linux_fonts/DejaVuSans-Oblique.ttf"
+		"8"		"resource/linux_fonts/LiberationSans-Regular.ttf"
+		"9"		"resource/linux_fonts/LiberationSans-Bold.ttf"
+		"10"	"resource/linux_fonts/LiberationMono-Regular.ttf"
+		"11"	"resource/GorDIN-Regular.ttf"
+		"12"	"resource/GorDIN-Bold.ttf"
+		"13"	"resource/GorDIN-Semibold.ttf"
+		"14"	"resource/GorDIN-Black.ttf"
+		"15"	"resource/GorDIN-Light.ttf"
+		"16"	"resource/fonts/Dodger.ttf"
+		"17"	"resource/fonts/Maxtasy_Crosshairs.ttf"
+		"18"	"resource/fonts/BatmanForeverAlternate.ttf"
 	}
-
 }
