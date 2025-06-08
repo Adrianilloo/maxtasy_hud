@@ -39,14 +39,13 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		
 	}
 	"playerlabel"
 	{
 		"ControlName"	"Label"
 		"fieldName"		"playerlabel"
 		"xpos"			"c-165"
-		"ypos"			"443"//390
+		"ypos"			"443"
 		"zpos"			"1000"
 		"wide"			"330"
 		"tall"			"30"
@@ -58,17 +57,6 @@
 		"textAlignment"	"center"
 		"font"			"SpecBarPlayerLabel"
 	}
-	//"bottomblack"
-	//{
-		//"ControlName"			"ImagePanel"
-		//"fieldName"			"bottomblack"
-		//"xpos"			"0"
-		//"ypos"			"445"
-		//"wide"			"4321"
-		//"tall"			"25"
-		//"visible"			"1"
-		//"fillcolor"			"0 0 0 200"
-	//}	
 	"DividerBar"
 	{
 		"ControlName"	"ImagePanel"
@@ -91,7 +79,7 @@
 		"ControlName"	"Label"
 		"fieldName"		"extrainfo"
 		"xpos"			"10"
-		"ypos"			"1000"//448
+		"ypos"			"1000"
 		"wide"			"350"
 		"tall"			"20"
 		"autoResize"	"1"
