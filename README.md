@@ -1,6 +1,12 @@
 # HL2DM Maxtasy's HUD (v1.3)
 Adapted to game's 25th Anniversary Update
 
+## *Adri's Variant branch*
+This branch makes the following changes:
+
+- Move teamplay label to bottom-center, preventing overlapping issues with few custom servers' top-left HUDs (e.g. RP)
+- Replace crosshair by a single-size, true-ish dot one
+
 -------------------------
 Installation:
 -------------------------
